@@ -1,0 +1,57 @@
+body {
+    background-color: #01516A;
+  }
+  
+  .container {
+    padding: 20px; /* Ajusta el padding a tu preferencia */
+    display: flex;
+    flex-direction: column; /* Ajustado para mejor compatibilidad */
+    overflow: auto; /* Cambiado a auto para permitir el desplazamiento */
+    margin-top: 6rem;
+    box-shadow: 0 1rem 5rem 1rem rgba(184, 184, 184, 0.444); /* Ajustado para una sombra menos extrema */
+    background-color: #8BDEF8;
+    border-radius: 15px;
+  }
+  
+  .task-grid {
+    display: grid;
+    grid-template-areas: "id-list name-list check-delete";
+    grid-template-columns: 30px 250px 70px;
+    gap: 10px; /* Añadido para mejorar la separación entre columnas */
+  }
+  
+  .id-list {
+    grid-area: id-list;
+  }
+  
+  .name-list {
+    grid-area: name-list;
+  }
+  
+  .check-delete {
+    grid-area: check-delete;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    min-height: 40px; /* Cambiado a min-height para flexibilidad */
+    line-height: 40px; /* Añadido para centrar verticalmente el texto */
+  }
+  
+  a {
+    cursor: pointer;
+  }
+  
+  .form-check {
+    margin-bottom: 0;
+  }
+  
+  .checked {
+    color: #A51515;
+  }
+  
